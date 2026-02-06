@@ -372,11 +372,6 @@ void tc_Index_Construction(string dataset_path){
 		}
 	}
 	t_end = clock();
-	for(auto a : TC_index[2]){
-		cout<<a.first<<" "<<a.second<<endl;
-	}
-    cout << "-----------------------------" << endl; 
-	// cout<<"k_max: "<<k_max<<" t_max: "<<t_max<<endl;	
 	double time_taken = double(t_end - t_start) / double(CLOCKS_PER_SEC); 
     cout << "Index construction time: " << fixed << time_taken << setprecision(5); 
     cout << " sec " << endl;
@@ -413,27 +408,6 @@ int main(int args, char* argv[]) {
     }
     string dataset_path = argv[1];
 	tc_Index_Construction(dataset_path);
-	// cout<<"please input query parameters k and delta!"<<endl;
-	// uint32_t k,t;
-	// int signal = 1;
-	// int leave;
-	// while(signal){
-	// 	cin>>k>>t;
-	// 	if(k > k_max || k < 3){
-	// 		cout<<"the input is illegal, k is no greater than:"<<k_max<<" and k is no less than 3, "<<" please input again!"<<endl;
-	// 		continue;
-	// 	}
-	// 	time_t t1 = clock();
-	// 	queryKDeltaTruss(k - 2,t);
-	// 	time_t t2 = clock();
-	// 	cout << "-----------------------------" << endl; 
-	// 	double time_taken = double(t2 - t1) / double(CLOCKS_PER_SEC); 
-	// 	cout << "Execution time: " << fixed << time_taken  << setprecision(6); 
-	// 	cout << " sec " << endl;
-	// 	cout<<"leave:0,continue:1!"<<endl;
-	// 	cin>>leave;
-	// 	signal = leave;
-	// }
 	return 0;
 }
 	
