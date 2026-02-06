@@ -291,13 +291,13 @@ void tc_Index_Construction(string dataset_path){
             uint32_t k1 = k_[e1], k2 = k_[e2], k3 = k_[e3];
 			//update ks
 			if(k1<=k2 && k1<=k3) {
-				if(ks_[e1]-- == k1) q.push(e1);
+				if(ks_[e1]-- == k1) { q.push(e1); Ins[e1] = true;}
 			} 
 			if(k2<=k1 && k2<=k3) {
-				if(ks_[e2]-- == k2) q.push(e2);
+				if(ks_[e2]-- == k2) { q.push(e2); Ins[e2] = true;}
 			} 
 			if(k3<=k1 && k3<=k2) {
-				if(ks_[e3]-- == k3) q.push(e3);
+				if(ks_[e3]-- == k3) { q.push(e3); Ins[e3] = true;}
 			}
 			//update the trussness of edge
 			while(!q.empty()){

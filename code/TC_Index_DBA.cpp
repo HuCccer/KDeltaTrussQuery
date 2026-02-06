@@ -377,26 +377,5 @@ int main(int args, char* argv[]) {
 	decltype(edge2times)().swap(edge2times);
     decltype(time2triangle)().swap(time2triangle);
     decltype(adj_)().swap(adj_);
-	// cout<<"please input query parameters k and delta!"<<endl;
-	// uint32_t k,t;
-	// int signal = 1;
-	// int leave;
-	// while(signal){
-	// 	cin>>k>>t;
-	// 	if(k > k_max || k < 3){
-	// 		cout<<"the input is illegal, k is no greater than:"<<k_max<<" and k is no less than 3, "<<" please input again!"<<endl;
-	// 		continue;
-	// 	}
-	// 	time_t t1 = clock();
-	// 	queryKDeltaTruss(k - 2,t);
-	// 	time_t t2 = clock();
-	// 	cout << "-----------------------------" << endl; 
-	// 	double time_taken = double(t2 - t1) / double(CLOCKS_PER_SEC); 
-	// 	cout << "Execution time: " << fixed << time_taken  << setprecision(6); 
-	// 	cout << " sec " << endl;
-	// 	cout<<"leave:0,continue:1!"<<endl;
-	// 	cin>>leave;
-	// 	signal = leave;
-	// }
 }
 	

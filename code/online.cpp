@@ -280,7 +280,6 @@ void DFS(int node,vector<bool>& visited, vector<int>& component) {
     }
 }
 
-//查找对应(k,delta)-truss的连通分量
 void findConnectedComponents(vector<vector<int>> &components) {
     vector<bool> visited(n_, false);
     for (int i = 0; i < n_; i++) {
@@ -307,8 +306,5 @@ int main(int args, char* argv[]) {
 	cout<<"please input support constrant k (k >= 2) and time constraint delta (delta >= 0)!"<<endl;
 	cin>>k>>delta;
 	getKDeltaTruss(dataset_path, k - 2, delta);
-	// vector<vector<int>> components;
-	// findConnectedComponents(components);
-	// cout<<"components: "<<components.size()<<endl;
 }
 	
